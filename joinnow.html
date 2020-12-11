@@ -136,7 +136,8 @@ function validateForm() {
        return false;
     } else {
         // Creating a string from input data for preview
-        var dataPreview = "You've entered the following details: \n" +
+        var dataPreview = "Your Appliation wil be submitted and you will receive an e-mail confirmation. \n"
+	    		   "You've entered the following details: \n" +
                           "Full Name: " + name + "\n" +
                           "Email Address: " + email + "\n" +
                           "Mobile Number: " + mobile + "\n" +
@@ -146,9 +147,7 @@ function validateForm() {
                           "Zip/Postal Code: " + zip + "\n" +
 						  "Gender: " + gender + "\n";
         if(hobbies.length) {
-            dataPreview += "Hobbies: " + hobbies.join(", ");
-			
-			"Your Appliation wil be submitted and you will receive an e-mail confirmation";
+            dataPreview += "Hobbies: " + hobbies.join(", ");						
         }
         // Display input data in a dialog box before submitting the form
         alert(dataPreview); window.location = 'home.html/';
